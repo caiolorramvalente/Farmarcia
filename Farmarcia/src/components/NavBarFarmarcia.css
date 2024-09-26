@@ -1,0 +1,78 @@
+.divNav{
+    background-color: #ef97a4;
+    width: 100%;
+    display: flex;
+justify-content: space-between;
+height: 18%;
+
+border: #e96a7e 2px solid;
+
+}
+root{
+    --cor-1: #e23e57;
+    --cor-2: #ffffff;
+    --cor-3: #e96a7e;
+    --cor-4: #ce1f3a;
+    --cor-5: #e6e6e6;
+    --cor-6: #ef97a4;
+}
+.logoImagem{
+    width: 70px;
+    height: 35;
+    border-radius: 40px;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.barraPesquisa{
+    height:35px;
+margin-top: 1.1%;
+width: 30%;
+border-radius: 12px;
+border: #ce1f3a 1px solid;
+outline: 0;
+
+
+}
+.body{
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.rodapeFarmarcia{
+    background-color: #ce1f3a;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+h2{
+    margin:40px ;
+}
+.butaoOpc{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ef97a400;
+    border: none;
+    margin: 5px;
+    margin-top: 6.4%;
+    border: #e23257 solid 1px;
+    border:#e23e57 solid 1px ;
+    border-radius: 10px;
+}
+.imagemLegal{
+    width: 30%;
+    height: 27%px;
+}
