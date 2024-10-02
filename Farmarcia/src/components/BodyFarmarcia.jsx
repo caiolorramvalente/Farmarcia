@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
 import SorteioCamisas from './SorteioCamisas'
 import CartaoPlacas from './CartaoPlacas'
+import { useNavigate } from 'react-router-dom'
 
 
 function BodyFarmarcia() {
+  const  navigate = useNavigate('')
+  
+
+
+
   const [imagemMostrada,setImagemMostrada]=useState("")
   function sorteioCamisas(){
     setImagemMostrada(<SorteioCamisas />)
@@ -25,7 +31,8 @@ function BodyFarmarcia() {
         <div>
         <button className='butaoOpc' onClick={sorteioCamisas} >sorteios</button>
         <button className='butaoOpc' onClick={cartoesFarmarcia}>Cartoes</button>
-        <button className='butaoOpc' onClick={()=>{}}>Atendimentos</button>
+        <button className='butaoOpc' onClick={()=>{navigate("/Atendimentos")}}>Atendimentos</button>
+        <button className='butaoOpc' onClick={()=>{navigate("/Remedios")}}>Remedios</button>
         </div>
         {imagemMostrada}
         
