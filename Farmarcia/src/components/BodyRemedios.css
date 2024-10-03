@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    border-radius: 10px;
 
 }
 .divDoragina,.divMultigrip,.divDorflex{
@@ -11,6 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left:100px ;
+    margin-right: 100px;
+    border-radius: 10px;
 }
 .botaoCompra{
 margin-top: 10px;
@@ -30,3 +34,123 @@ border: 0;
 
 
 }
+.containerPai{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   
+   
+  
+    
+}
+.btnVoltar{
+    width: 150px;
+    margin-top: 100px;
+    font-size: 27px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: white;
+    border: #e23e57 2px solid;
+    
+
+}
+root{
+    --cor-1: #e23e57;
+    --cor-2: #ffffff;
+    --cor-3: #e96a7e;
+    --cor-4: #ce1f3a;
+    --cor-5: #e6e6e6;
+    --cor-6: #ef97a4;
+}
+.btnVoltar:hover{
+    background-color: #e23e57;
+    transition: 500ms ease;
+    color: white;
+
+
+}
+.modalCompra{
+    background-color: #70e000;
+    color: white;
+    border: 0;
+    margin-left: 39%;
+    margin-top: 10px;
+    transition: 1s;
+   
+
+}
+.divConteudoModal{
+ display: flex;
+ flex-direction: row;
+}
+.btnFecharModal{
+    background-color: white;
+    border: 0;
+  
+    width: fit-content;
+    font-size: 17px;
+    padding:5px ;
+    padding-left:10px ;
+    padding-right:10px ;
+   
+    
+}
+.btnFecharModal:hover{
+    transition: 500ms;
+    background-color: #bf0603;
+    color: white;
+    border: 0;
+    
+}
+.img{
+    border-radius: 15px;
+}
+.open{
+    animation:slide-in 0.5s forwards; 
+    
+
+}
+.closing{
+    animation: slide-out 1s forwards;
+
+}
+@keyframes slide-in {
+    0% {
+      transform: translate(100%, -50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(100%, -50%);
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  dialog {
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0 0 1em rgba(0, 110, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    color: #70e000;
+  }
+  
+  

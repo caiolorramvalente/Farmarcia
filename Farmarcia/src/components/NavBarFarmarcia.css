@@ -6,7 +6,7 @@ justify-content: space-between;
 height: 18%;
 
 border: #e96a7e 2px solid;
-border-radius: 4px;
+
 
 }
 root{
@@ -21,6 +21,7 @@ root{
     width: 70px;
     height: 35;
     border-radius: 40px;
+    margin: 5px;
 
 }
 *{
@@ -91,6 +92,7 @@ h2{
 }
 .fotterInfo{
     color: white;
+    margin-top: 20px;
 }
 a{
     color: white;
